@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEPLOP</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Tahoma, sans-serif; }
+    body { background: #f9f9f9; color: #333; }
+    header { background: linear-gradient(135deg, #4c6ef5, #15aabf); padding: 20px; text-align: center; color: #fff; font-size: 24px; font-weight: bold; letter-spacing: 2px; }
+    .container { max-width: 1100px; margin: auto; padding: 40px 20px; text-align: center; }
+    .container h1 { font-size: 42px; margin-bottom: 20px; color: #222; }
+    .container p { font-size: 18px; line-height: 1.6; color: #555; margin-bottom: 30px; }
+    .btn { background: #4c6ef5; color: #fff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+    .btn:hover { background: #364fc7; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 40px; }
+    .card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); cursor: pointer; transition: 0.3s; }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); }
+    .card img { width: 80px; height: 80px; object-fit: contain; margin-bottom: 10px; }
+    .card h3 { font-size: 18px; color: #222; margin-bottom: 5px; }
+    .card p { font-size: 14px; color: #555; }
+    footer { margin-top: 40px; text-align: center; padding: 20px; background: #eee; font-size: 14px; color: #555; }
+    @media (max-width: 768px) { .container h1 { font-size: 32px; } .container p { font-size: 16px; } }
+
+    /* Reduce unlock content overlay size */
+    #ogjs_iframe {
+      transform: scale(0.7) !important;
+      transform-origin: top right !important;
+    }
+  </style>
+</head>
+<body>
+
+<header>LEPLOP</header>
+
+<div class="container">
+  <h1>Welcome to LEPLOP</h1>
+  <p>Discover innovative solutions tailored to your needs. We focus on simplicity, creativity, and delivering real value to our users.</p>
+  <a href="#get-started" class="btn">Get Started</a>
+
+  <div class="cards">
+    <!-- Original Gift Cards -->
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/roblox.png" alt="Roblox">
+      <h3>Roblox Card</h3>
+      <p>Get free Roblox codes.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/amazon.png" alt="Amazon">
+      <h3>Amazon Gift Card</h3>
+      <p>Claim free Amazon credits.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/google-play.png" alt="Google Play">
+      <h3>Google Play</h3>
+      <p>Free Google Play balance.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/shopping-cart.png" alt="E-Mart">
+      <h3>E-Mart Card</h3>
+      <p>Discounts and offers on E-Mart.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/netflix.png" alt="Netflix">
+      <h3>Netflix Account</h3>
+      <p>Access premium Netflix accounts.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/spotify.png" alt="Spotify">
+      <h3>Spotify Account</h3>
+      <p>Enjoy Spotify Premium free.</p>
+    </div>
+
+    <!-- Social Media Free Products -->
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/tiktok--v1.png" alt="TikTok">
+      <h3>TikTok Followers</h3>
+      <p>Get free TikTok followers.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/youtube-play.png" alt="YouTube">
+      <h3>YouTube Subscribers</h3>
+      <p>Increase your YouTube subscribers for free.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/facebook-new.png" alt="Facebook">
+      <h3>Facebook Likes</h3>
+      <p>Boost your Facebook posts.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/pinterest.png" alt="Pinterest">
+      <h3>Pinterest Followers</h3>
+      <p>Increase Pinterest followers instantly.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/twitter.png" alt="Twitter">
+      <h3>Twitter Followers</h3>
+      <p>Get free Twitter followers.</p>
+    </div>
+    <div class="card" onclick="unlockContent()">
+      <img src="https://img.icons8.com/color/96/000000/instagram-new.png" alt="Instagram">
+      <h3>Instagram Followers</h3>
+      <p>Boost Instagram followers and likes.</p>
+    </div>
+  </div>
+</div>
+
+<footer>© 2025 LEPLOP. All Rights Reserved.</footer>
+
+<script type="text/javascript">
+  function unlockContent() {
+    var script = document.createElement('script');
+    script.src = 'https://unlockcontent.net/cl/js/42lgr5';
+    script.id = 'ogjs';
+    document.body.appendChild(script);
+  }
+</script>
+
+</body>
+</html>
